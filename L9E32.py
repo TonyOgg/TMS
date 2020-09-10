@@ -32,23 +32,4 @@ print("y ravno " + str(y))
 print(fucktorial(3))"""
 
 
-# 3
-
-
-
-"""def reduce(fn, ls, acc):
-    if len(ls) == 0:
-        return acc
-    else:
-        new_acc = fn(ls[0], acc)
-        ls_without_first_element = ls[1:]
-        result = reduce(fn, ls_without_first_element, new_acc)
-        return result
-
-
-def pluserED(a, b):
-    return a + b
-
-
-print(reduce(pluserED, [1, 3, 5], 0))"""
 
