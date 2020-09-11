@@ -26,7 +26,9 @@ print(idf.merge(mdf, left_on='id', right_on='id2', how='outer'))
 # известные люди из датафрейма info. Для тех людей из info для которых нет оценок в
 # marks, на месте оценок должны стоять NaN.
 
-print(idf.merge(mdf, left_on='id', right_on='id2', how='left'))
+redf = idf.merge(mdf, left_on='id', right_on='id2', how='left')
+print(redf)
+redf.to_csv('result.csv', index=False)
 
 # 6. Объедините датафреймы в один так чтобы в результирующем датафрейме были все
 # известные люди из датафрейма marks. Для тех людей из marks для которых нет расс\пола\... в info, на месте расс\пола\... должны стоять NaN.
