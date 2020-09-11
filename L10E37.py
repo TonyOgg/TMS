@@ -49,3 +49,4 @@ def dead():
         return '3'
 
 print(dead())
+print(dafr.groupby(['Sex', 'Survived']).count())
